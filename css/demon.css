@@ -1,0 +1,21 @@
+#header nav a.fa-twitter:hover::before {
+    background-color: #00BCD4;
+    color: white;
+    border-radius: 30%;
+}
+#header nav a.fa-instagram:hover::before {
+    background-color: #795548;
+    color: white;
+    border-radius: 30%;
+}
+#header nav a.fa-facebook:hover::before {
+    background-color: #3F51B5;
+    border-radius: 30%;
+    color: white;
+}
+#header nav a.fa-envelope-o:hover::before {
+    background-color: #FF9800;
+    color: white;
+    border-radius: 30%;
+}
+
