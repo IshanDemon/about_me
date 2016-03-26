@@ -18,4 +18,72 @@
     color: white;
     border-radius: 30%;
 }
+#header nav a.fa-stack-overflow:hover::before {
+    background-color: #242424;
+    color: white;
+    border-radius: 30%;
+}
+#header nav a.fa-github:hover::before {
+    background-color: #DD9EB4;
+    color: white;
+    border-radius: 30%;
+}
+.footer {
+    animation: 1s ease 2.25s normal forwards 1 running header;
+    backface-visibility: hidden;
+    cursor: default;
+    display: inline-block;
+    opacity: 0;
+    position: relative;
+    top: -2em;
+    transform: translate3d(0px, 0px, 0px);
+    vertical-align: middle;
+    width: 99%;
+    font-size: 12px;
+}
+.footer a {
+    font-size: 10px;
+    text-decoration: none;
+}
+.name{
+    font-family: "Lucida Grande";
+}
+.rotate3DY {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 8000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 8000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
 
+    animation-name: spin;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotateY(0deg); }
+    to { -ms-transform: rotateY(-540deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotateY(0deg); }
+    to { -moz-transform: rotateY(540deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotateY(0deg); }
+    to { -webkit-transform: rotateY(540deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotateY(0deg);
+    }
+    to {
+        transform:rotateY(540deg);
+    }
+}
